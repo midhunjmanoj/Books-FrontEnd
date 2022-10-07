@@ -1,0 +1,16 @@
+<h2 class="text-center">All Categories</h2>
+
+<div class="row">
+    <div class="col-sm-4" *ngFor="let category of categories">
+        <div class="card">
+            <img src="#" alt="" class ="card-image-top">
+            <div class="card-body">
+                <h5 class="card-title">{{category.CategoryName}}</h5>
+                <p>{{category.Description}}</p>
+                <p>{{category.Status}}</p>
+                <p>{{category.Position}}</p>
+                <button class="btb btn-primary" (click)="onClickHandler(category.CategoryId)">View Books</button>
+            </div>
+        </div>
+    </div>
+</div>
